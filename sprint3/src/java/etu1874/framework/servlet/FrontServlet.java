@@ -49,7 +49,6 @@ public class FrontServlet extends HttpServlet {
 //            out.println("<h1>Servlet FrontServlet at " + request.getContextPath() + "</h1>");
 //            out.println("<h1>url " + Utilitaire.infoUrl(request.getRequestURL().toString(), "http://localhost:8080/Framework/")+ "</h1>");
             out.println("<p>url: " + Utilitaire.infoUrl2(request.getPathInfo())+ "</p>");
-            out.println("<p>class Name: " +Utilitaire.findMethodsAnnotatedWith("etu1874.framework", "infoUrl")+  Utilitaire.infoUrl2(request.getPathInfo())+ "</p>");
             out.println("<p>class Name: " +Utilitaire.findMethodsAnnotatedWith("etu1874.framework", Utilitaire.infoUrl2(request.getPathInfo()))[0] + "</p>");
             out.println("<p>foncttion Name: " +Utilitaire.findMethodsAnnotatedWith("etu1874.framework", Utilitaire.infoUrl2(request.getPathInfo()))[1] + "</p>");
             out.println("</body>");
